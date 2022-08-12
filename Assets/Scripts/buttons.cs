@@ -15,12 +15,10 @@ public class buttons : MonoBehaviour
         }
         if (GameManager.Instance.highscoreUser != "")
         {
-            highscoreText.gameObject.transform.position = new Vector3(highscoreText.gameObject.transform.position.x, 457);
             highscoreText.text = $"Highscore :  {GameManager.Instance.highscore}\nby {GameManager.Instance.highscoreUser} ";
         }
         else
         {
-            highscoreText.gameObject.transform.position = new Vector3(highscoreText.gameObject.transform.position.x, 429);
             highscoreText.text = "Highscore : 0";
         }
     }
