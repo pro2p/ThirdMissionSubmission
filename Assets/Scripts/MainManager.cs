@@ -87,6 +87,7 @@ public class MainManager : MonoBehaviour
         GameManager.Instance.highscore = newHighscore;
         GameManager.Instance.highscoreUser = GameManager.Instance.username;
         HighscoreText.text = $"Highscore : {GameManager.Instance.username}, {GameManager.Instance.highscore}";
+        GameManager.Instance.SaveData();
     }
 
     public void GameOver()
